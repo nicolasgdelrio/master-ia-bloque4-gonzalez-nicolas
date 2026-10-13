@@ -1,6 +1,4 @@
-# Sesión 1: APIs de modelos de IA
-Nicolás González del Río
-
+# Práctica 1 — Código modificado y respuestas a las preguntasNicolás González del Río
 ## Preparación del entorno
 He creado el entorno virtual, instalado las dependencias, creado la base de datos y configurado la clave de OpenRouter en un archivo .env que no se publica.
 
