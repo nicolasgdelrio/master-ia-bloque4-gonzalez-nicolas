@@ -1,4 +1,12 @@
-# Práctica 1 — Código modificado y respuestas a las preguntasNicolás González del Río
+# Sesión 1 — Prácticas P1 a P5
+
+Nicolás González del Río
+
+La entrega E1 está en la carpeta `e1` e incluye:
+- `llm_client.py`: interfaz común.
+- `comparativa.csv`: resultados y puntuaciones.
+- `analisis.md`: análisis de los resultados.
+
 ## Preparación del entorno
 He creado el entorno virtual, instalado las dependencias, creado la base de datos y configurado la clave de OpenRouter en un archivo .env que no se publica.
 
