@@ -1,0 +1,488 @@
+[
+  {
+    "caso": 1,
+    "proveedor": "OpenAI",
+    "modelo": "openai/gpt-5.4-mini",
+    "correo": "Necesito 20 kg del blend de hostelería para el viernes. Bar La Esquina.",
+    "esperado": "pedido",
+    "fecha_utc": "2026-10-24T15:42:02.949121+00:00",
+    "resultado": {
+      "tipo": "pedido",
+      "cliente": "Bar La Esquina",
+      "lineas": [
+        {
+          "producto": "blend de hostelería",
+          "cantidad": 20
+        }
+      ],
+      "urgente": true,
+      "resumen": "El cliente Bar La Esquina solicita 20 kg del blend de hostelería para el viernes."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [
+      {
+        "id": 1,
+        "nombre": "Bar La Esquina",
+        "tipo": "bar",
+        "distrito": "Retiro"
+      }
+    ],
+    "avisos": []
+  },
+  {
+    "caso": 2,
+    "proveedor": "OpenAI",
+    "modelo": "openai/gpt-5.4-mini",
+    "correo": "El molino hace un ruido raro desde ayer, ¿podéis venir?",
+    "esperado": "incidencia",
+    "fecha_utc": "2026-10-24T15:42:05.373032+00:00",
+    "resultado": {
+      "tipo": "incidencia",
+      "cliente": null,
+      "lineas": [],
+      "urgente": true,
+      "resumen": "El cliente informa de que el molino hace un ruido raro desde ayer y solicita asistencia."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [],
+    "avisos": []
+  },
+  {
+    "caso": 3,
+    "proveedor": "OpenAI",
+    "modelo": "openai/gpt-5.4-mini",
+    "correo": "¿Tenéis café descafeinado de especialidad?",
+    "esperado": "consulta",
+    "fecha_utc": "2026-10-24T15:42:06.531722+00:00",
+    "resultado": {
+      "tipo": "consulta",
+      "cliente": null,
+      "lineas": [],
+      "urgente": false,
+      "resumen": "El cliente pregunta si disponéis de café descafeinado de especialidad."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [],
+    "avisos": []
+  },
+  {
+    "caso": 4,
+    "proveedor": "OpenAI",
+    "modelo": "openai/gpt-5.4-mini",
+    "correo": "Mandadme 5 kg de Etiopía y, de paso, la cafetera gotea. Lumbre.",
+    "esperado": "mixto",
+    "fecha_utc": "2026-10-24T15:42:07.956469+00:00",
+    "resultado": {
+      "tipo": "mixto",
+      "cliente": "Lumbre",
+      "lineas": [
+        {
+          "producto": "Etiopía",
+          "cantidad": 5
+        }
+      ],
+      "urgente": false,
+      "resumen": "Piden 5 kg de café Etiopía y avisan de que la cafetera gotea."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [
+      {
+        "id": 2,
+        "nombre": "Restaurante Lumbre",
+        "tipo": "restaurante",
+        "distrito": "Chamberí"
+      }
+    ],
+    "avisos": []
+  },
+  {
+    "caso": 5,
+    "proveedor": "OpenAI",
+    "modelo": "openai/gpt-5.4-mini",
+    "correo": "URGENTE: sin café para mañana, 10 kg de blend. Hotel Prado Suites",
+    "esperado": "pedido",
+    "fecha_utc": "2026-10-24T15:42:09.148627+00:00",
+    "resultado": {
+      "tipo": "pedido",
+      "cliente": "Hotel Prado Suites",
+      "lineas": [
+        {
+          "producto": "blend",
+          "cantidad": 10
+        }
+      ],
+      "urgente": true,
+      "resumen": "El cliente Hotel Prado Suites solicita urgentemente 10 kg de blend para mañana porque se ha quedado sin café."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [
+      {
+        "id": 3,
+        "nombre": "Hotel Prado Suites",
+        "tipo": "hotel",
+        "distrito": "Centro"
+      }
+    ],
+    "avisos": []
+  },
+  {
+    "caso": 6,
+    "proveedor": "OpenAI",
+    "modelo": "openai/gpt-5.4-mini",
+    "correo": "Buenas, ¿la factura de septiembre ya está emitida?",
+    "esperado": "consulta",
+    "fecha_utc": "2026-10-24T15:42:10.326675+00:00",
+    "resultado": {
+      "tipo": "consulta",
+      "cliente": null,
+      "lineas": [],
+      "urgente": false,
+      "resumen": "El cliente pregunta si la factura de septiembre ya está emitida."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [],
+    "avisos": []
+  },
+  {
+    "caso": 7,
+    "proveedor": "OpenAI",
+    "modelo": "openai/gpt-5.4-mini",
+    "correo": "Qué maravilla: otra vez el molino averiado. Así da gusto abrir el bar. Necesitamos que lo reparéis. Bar La Esquina.",
+    "esperado": "incidencia",
+    "fecha_utc": "2026-10-24T15:42:11.308115+00:00",
+    "resultado": {
+      "tipo": "incidencia",
+      "cliente": "Bar La Esquina",
+      "lineas": [],
+      "urgente": false,
+      "resumen": "El cliente indica que el molino está averiado y solicita su reparación."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [
+      {
+        "id": 1,
+        "nombre": "Bar La Esquina",
+        "tipo": "bar",
+        "distrito": "Retiro"
+      }
+    ],
+    "avisos": []
+  },
+  {
+    "caso": 8,
+    "proveedor": "OpenAI",
+    "modelo": "openai/gpt-5.4-mini",
+    "correo": "Soy del Bar La Esquina. Enviadnos 4 kg de descafeinado. El Restaurante Lumbre nos recomendó vuestro café, pero este pedido es solo para nosotros.",
+    "esperado": "pedido",
+    "fecha_utc": "2026-10-24T15:42:12.576778+00:00",
+    "resultado": {
+      "tipo": "pedido",
+      "cliente": "Bar La Esquina",
+      "lineas": [
+        {
+          "producto": "descafeinado",
+          "cantidad": 4
+        }
+      ],
+      "urgente": false,
+      "resumen": "El Bar La Esquina solicita 4 kg de descafeinado para su local."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [
+      {
+        "id": 1,
+        "nombre": "Bar La Esquina",
+        "tipo": "bar",
+        "distrito": "Retiro"
+      }
+    ],
+    "avisos": []
+  },
+  {
+    "caso": 9,
+    "proveedor": "OpenAI",
+    "modelo": "openai/gpt-5.4-mini",
+    "correo": "Hello, please send 6 kg of your house blend to Hotel Prado Suites next Monday. Thank you.",
+    "esperado": "pedido",
+    "fecha_utc": "2026-10-24T15:42:13.706237+00:00",
+    "resultado": {
+      "tipo": "pedido",
+      "cliente": "Hotel Prado Suites",
+      "lineas": [
+        {
+          "producto": "house blend",
+          "cantidad": 6
+        }
+      ],
+      "urgente": false,
+      "resumen": "Piden 6 kg de house blend para Hotel Prado Suites el próximo lunes."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [
+      {
+        "id": 3,
+        "nombre": "Hotel Prado Suites",
+        "tipo": "hotel",
+        "distrito": "Centro"
+      }
+    ],
+    "avisos": []
+  },
+  {
+    "caso": 10,
+    "proveedor": "OpenAI",
+    "modelo": "openai/gpt-5.4-mini",
+    "correo": "Enviadme 3 kg de café de Etiopía. Gracias, Marta.",
+    "esperado": "pedido",
+    "fecha_utc": "2026-10-24T15:42:14.853010+00:00",
+    "resultado": {
+      "tipo": "pedido",
+      "cliente": null,
+      "lineas": [
+        {
+          "producto": "café de Etiopía",
+          "cantidad": 3
+        }
+      ],
+      "urgente": false,
+      "resumen": "Pide 3 kg de café de Etiopía."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [],
+    "avisos": []
+  },
+  {
+    "caso": 11,
+    "proveedor": "OpenAI",
+    "modelo": "openai/gpt-5.4-mini",
+    "correo": "Somos el Bar Inexistente. Queremos 2 kg de descafeinado.",
+    "esperado": "pedido",
+    "fecha_utc": "2026-10-24T15:42:15.937286+00:00",
+    "resultado": {
+      "tipo": "pedido",
+      "cliente": "Bar Inexistente",
+      "lineas": [
+        {
+          "producto": "descafeinado",
+          "cantidad": 2
+        }
+      ],
+      "urgente": false,
+      "resumen": "El cliente Bar Inexistente pide 2 kg de descafeinado."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [],
+    "avisos": [
+      "Cliente no encontrado: Bar Inexistente"
+    ]
+  },
+  {
+    "caso": 12,
+    "proveedor": "OpenAI",
+    "modelo": "openai/gpt-5.4-mini",
+    "correo": "¿Cuál es el precio por kilo del blend y cuánto cuesta el envío? Panadería Ibiza.",
+    "esperado": "consulta",
+    "fecha_utc": "2026-10-24T15:42:17.017877+00:00",
+    "resultado": {
+      "tipo": "consulta",
+      "cliente": "Panadería Ibiza",
+      "lineas": [],
+      "urgente": false,
+      "resumen": "El cliente pregunta el precio por kilo del blend y el coste del envío."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [
+      {
+        "id": 5,
+        "nombre": "Panadería Ibiza",
+        "tipo": "cafeteria",
+        "distrito": "Retiro"
+      }
+    ],
+    "avisos": []
+  },
+  {
+    "caso": 13,
+    "proveedor": "OpenAI",
+    "modelo": "openai/gpt-5.4-mini",
+    "correo": "En Cafetería Atocha 12 la cafetera pierde agua. Además, enviadnos 8 kg de blend.",
+    "esperado": "mixto",
+    "fecha_utc": "2026-10-24T15:42:18.506282+00:00",
+    "resultado": {
+      "tipo": "mixto",
+      "cliente": "Cafetería Atocha 12",
+      "lineas": [
+        {
+          "producto": "blend",
+          "cantidad": 8
+        }
+      ],
+      "urgente": false,
+      "resumen": "La cafetería informa de una incidencia en la cafetera y solicita además 8 kg de blend."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [
+      {
+        "id": 4,
+        "nombre": "Cafetería Atocha 12",
+        "tipo": "cafeteria",
+        "distrito": "Arganzuela"
+      }
+    ],
+    "avisos": []
+  },
+  {
+    "caso": 14,
+    "proveedor": "OpenAI",
+    "modelo": "openai/gpt-5.4-mini",
+    "correo": "No enviéis café todavía. Solo quiero saber si tenéis existencias de Etiopía. Restaurante Lumbre.",
+    "esperado": "consulta",
+    "fecha_utc": "2026-10-24T15:42:19.645525+00:00",
+    "resultado": {
+      "tipo": "consulta",
+      "cliente": "Restaurante Lumbre",
+      "lineas": [],
+      "urgente": false,
+      "resumen": "El cliente pregunta si hay existencias de Etiopía y pide no enviar café todavía."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [
+      {
+        "id": 2,
+        "nombre": "Restaurante Lumbre",
+        "tipo": "restaurante",
+        "distrito": "Chamberí"
+      }
+    ],
+    "avisos": []
+  },
+  {
+    "caso": 15,
+    "proveedor": "OpenAI",
+    "modelo": "openai/gpt-5.4-mini",
+    "correo": "El último pedido llegó con las bolsas rotas. Por favor, revisad la incidencia. Hotel Prado Suites.",
+    "esperado": "incidencia",
+    "fecha_utc": "2026-10-24T15:42:20.583758+00:00",
+    "resultado": {
+      "tipo": "incidencia",
+      "cliente": "Hotel Prado Suites",
+      "lineas": [],
+      "urgente": false,
+      "resumen": "El cliente reporta que el último pedido llegó con las bolsas rotas y solicita revisión de la incidencia."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [
+      {
+        "id": 3,
+        "nombre": "Hotel Prado Suites",
+        "tipo": "hotel",
+        "distrito": "Centro"
+      }
+    ],
+    "avisos": []
+  },
+  {
+    "caso": 16,
+    "proveedor": "OpenAI",
+    "modelo": "openai/gpt-5.4-mini",
+    "correo": "Para Bar La Esquina: 2 kg de Etiopía y 3 kg de descafeinado, por favor.",
+    "esperado": "pedido",
+    "fecha_utc": "2026-10-24T15:42:21.717286+00:00",
+    "resultado": {
+      "tipo": "pedido",
+      "cliente": "Bar La Esquina",
+      "lineas": [
+        {
+          "producto": "Etiopía",
+          "cantidad": 2
+        },
+        {
+          "producto": "descafeinado",
+          "cantidad": 3
+        }
+      ],
+      "urgente": false,
+      "resumen": "Pedido de 2 kg de Etiopía y 3 kg de descafeinado para Bar La Esquina."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [
+      {
+        "id": 1,
+        "nombre": "Bar La Esquina",
+        "tipo": "bar",
+        "distrito": "Retiro"
+      }
+    ],
+    "avisos": []
+  },
+  {
+    "caso": 17,
+    "proveedor": "OpenAI",
+    "modelo": "openai/gpt-5.4-mini",
+    "correo": "Soy de Cafetería Luna Azul. ¿Vendéis vasos compostables?",
+    "esperado": "consulta",
+    "fecha_utc": "2026-10-24T15:42:23.331420+00:00",
+    "resultado": {
+      "tipo": "consulta",
+      "cliente": "Cafetería Luna Azul",
+      "lineas": [],
+      "urgente": false,
+      "resumen": "El cliente pregunta si vendéis vasos compostables."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [],
+    "avisos": [
+      "Cliente no encontrado: Cafetería Luna Azul"
+    ]
+  },
+  {
+    "caso": 18,
+    "proveedor": "OpenAI",
+    "modelo": "openai/gpt-5.4-mini",
+    "correo": "Panadería Ibiza: enviad 0 kg de blend. Es la cantidad que figura en nuestra solicitud.",
+    "esperado": "pedido",
+    "fecha_utc": "2026-10-24T15:42:24.663901+00:00",
+    "resultado": {
+      "tipo": "pedido",
+      "cliente": "Panadería Ibiza",
+      "lineas": [
+        {
+          "producto": "blend",
+          "cantidad": 0
+        }
+      ],
+      "urgente": false,
+      "resumen": "El cliente indica que la cantidad solicitada de blend es 0 kg."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [
+      {
+        "id": 5,
+        "nombre": "Panadería Ibiza",
+        "tipo": "cafeteria",
+        "distrito": "Retiro"
+      }
+    ],
+    "avisos": [
+      "Cantidad no válida: debe ser mayor que cero"
+    ]
+  }
+]

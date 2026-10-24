@@ -1,0 +1,19 @@
+﻿caso,proveedor,modelo,esperado,obtenido,acierto,error,avisos
+1,Claude,anthropic/claude-haiku-4.5,pedido,pedido,True,,
+2,Claude,anthropic/claude-haiku-4.5,incidencia,incidencia,True,,
+3,Claude,anthropic/claude-haiku-4.5,consulta,consulta,True,,
+4,Claude,anthropic/claude-haiku-4.5,mixto,mixto,True,,
+5,Claude,anthropic/claude-haiku-4.5,pedido,pedido,True,,
+6,Claude,anthropic/claude-haiku-4.5,consulta,consulta,True,,
+7,Claude,anthropic/claude-haiku-4.5,incidencia,incidencia,True,,
+8,Claude,anthropic/claude-haiku-4.5,pedido,pedido,True,,
+9,Claude,anthropic/claude-haiku-4.5,pedido,pedido,True,,
+10,Claude,anthropic/claude-haiku-4.5,pedido,pedido,True,,Cliente no encontrado: Marta
+11,Claude,anthropic/claude-haiku-4.5,pedido,pedido,True,,Cliente no encontrado: Bar Inexistente
+12,Claude,anthropic/claude-haiku-4.5,consulta,consulta,True,,
+13,Claude,anthropic/claude-haiku-4.5,mixto,mixto,True,,
+14,Claude,anthropic/claude-haiku-4.5,consulta,consulta,True,,
+15,Claude,anthropic/claude-haiku-4.5,incidencia,incidencia,True,,
+16,Claude,anthropic/claude-haiku-4.5,pedido,pedido,True,,
+17,Claude,anthropic/claude-haiku-4.5,consulta,consulta,True,,Cliente no encontrado: Cafetería Luna Azul
+18,Claude,anthropic/claude-haiku-4.5,pedido,pedido,True,,Cantidad no válida: debe ser mayor que cero

@@ -1,0 +1,71 @@
+{
+  "proveedor": "OpenAI",
+  "modelo": "openai/gpt-5.4-mini",
+  "pregunta": "¿Cuánto stock queda de descafeinado?",
+  "fecha_utc": "2026-10-24T15:42:18.503360+00:00",
+  "vueltas": [
+    {
+      "numero": 1,
+      "usage": {
+        "input_tokens": 265,
+        "input_tokens_details": {
+          "cache_write_tokens": null,
+          "cached_tokens": 0
+        },
+        "output_tokens": 20,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 285,
+        "cost": 0.00028875,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00028875,
+          "upstream_inference_input_cost": 0.00019875,
+          "upstream_inference_output_cost": 9e-05
+        }
+      },
+      "llamadas": [
+        {
+          "nombre": "stock_producto",
+          "argumentos": {
+            "texto": "descafeinado"
+          },
+          "resultado": [
+            {
+              "sku": "CAF-003",
+              "nombre": "Café descafeinado 1 kg",
+              "precio": 19.8,
+              "stock": 45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 2,
+      "usage": {
+        "input_tokens": 332,
+        "input_tokens_details": {
+          "cache_write_tokens": null,
+          "cached_tokens": 0
+        },
+        "output_tokens": 28,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 360,
+        "cost": 0.000375,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.000375,
+          "upstream_inference_input_cost": 0.000249,
+          "upstream_inference_output_cost": 0.000126
+        }
+      },
+      "llamadas": []
+    }
+  ],
+  "respuesta": "Quedan 45 unidades de **Café descafeinado 1 kg** (SKU **CAF-003**).",
+  "completada": true
+}

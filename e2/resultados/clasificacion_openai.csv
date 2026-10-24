@@ -1,0 +1,19 @@
+﻿caso,proveedor,modelo,esperado,obtenido,acierto,error,avisos
+1,OpenAI,openai/gpt-5.4-mini,pedido,pedido,True,,
+2,OpenAI,openai/gpt-5.4-mini,incidencia,incidencia,True,,
+3,OpenAI,openai/gpt-5.4-mini,consulta,consulta,True,,
+4,OpenAI,openai/gpt-5.4-mini,mixto,mixto,True,,
+5,OpenAI,openai/gpt-5.4-mini,pedido,pedido,True,,
+6,OpenAI,openai/gpt-5.4-mini,consulta,consulta,True,,
+7,OpenAI,openai/gpt-5.4-mini,incidencia,incidencia,True,,
+8,OpenAI,openai/gpt-5.4-mini,pedido,pedido,True,,
+9,OpenAI,openai/gpt-5.4-mini,pedido,pedido,True,,
+10,OpenAI,openai/gpt-5.4-mini,pedido,pedido,True,,
+11,OpenAI,openai/gpt-5.4-mini,pedido,pedido,True,,Cliente no encontrado: Bar Inexistente
+12,OpenAI,openai/gpt-5.4-mini,consulta,consulta,True,,
+13,OpenAI,openai/gpt-5.4-mini,mixto,mixto,True,,
+14,OpenAI,openai/gpt-5.4-mini,consulta,consulta,True,,
+15,OpenAI,openai/gpt-5.4-mini,incidencia,incidencia,True,,
+16,OpenAI,openai/gpt-5.4-mini,pedido,pedido,True,,
+17,OpenAI,openai/gpt-5.4-mini,consulta,consulta,True,,Cliente no encontrado: Cafetería Luna Azul
+18,OpenAI,openai/gpt-5.4-mini,pedido,pedido,True,,Cantidad no válida: debe ser mayor que cero

@@ -1,0 +1,89 @@
+{
+  "proveedor": "Gemini",
+  "modelo": "google/gemini-3.8-flash",
+  "pregunta": "¿Cuánto stock queda de descafeinado?",
+  "fecha_utc": "2026-10-24T15:42:57.018257+00:00",
+  "vueltas": [
+    {
+      "numero": 1,
+      "usage": {
+        "completion_tokens": 89,
+        "prompt_tokens": 255,
+        "total_tokens": 344,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 71,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "image_tokens": null,
+          "text_tokens": null,
+          "video_tokens": 0
+        },
+        "cost": 0.000525,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.000525,
+          "upstream_inference_prompt_cost": 0.00019125,
+          "upstream_inference_completions_cost": 0.00033375
+        }
+      },
+      "llamadas": [
+        {
+          "nombre": "stock_producto",
+          "argumentos": {
+            "texto": "descafeinado"
+          },
+          "resultado": [
+            {
+              "sku": "CAF-003",
+              "nombre": "Café descafeinado 1 kg",
+              "precio": 19.8,
+              "stock": 45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 2,
+      "usage": {
+        "completion_tokens": 94,
+        "prompt_tokens": 368,
+        "total_tokens": 462,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 48,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "image_tokens": null,
+          "text_tokens": null,
+          "video_tokens": 0
+        },
+        "cost": 0.0006285,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0006285,
+          "upstream_inference_prompt_cost": 0.000276,
+          "upstream_inference_completions_cost": 0.0003525
+        }
+      },
+      "llamadas": []
+    }
+  ],
+  "respuesta": "Actualmente quedan **45 unidades** en stock de **Café descafeinado 1 kg** (SKU: `CAF-003`), con un precio de 19,80 € por unidad.",
+  "completada": true
+}

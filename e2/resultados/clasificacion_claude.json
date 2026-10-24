@@ -1,0 +1,490 @@
+[
+  {
+    "caso": 1,
+    "proveedor": "Claude",
+    "modelo": "anthropic/claude-haiku-4.5",
+    "correo": "Necesito 20 kg del blend de hostelería para el viernes. Bar La Esquina.",
+    "esperado": "pedido",
+    "fecha_utc": "2026-10-24T15:42:25.682524+00:00",
+    "resultado": {
+      "tipo": "pedido",
+      "cliente": "Bar La Esquina",
+      "lineas": [
+        {
+          "producto": "blend de hostelería",
+          "cantidad": 20
+        }
+      ],
+      "urgente": true,
+      "resumen": "Bar La Esquina solicita 20 kg de blend de hostelería para el viernes."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [
+      {
+        "id": 1,
+        "nombre": "Bar La Esquina",
+        "tipo": "bar",
+        "distrito": "Retiro"
+      }
+    ],
+    "avisos": []
+  },
+  {
+    "caso": 2,
+    "proveedor": "Claude",
+    "modelo": "anthropic/claude-haiku-4.5",
+    "correo": "El molino hace un ruido raro desde ayer, ¿podéis venir?",
+    "esperado": "incidencia",
+    "fecha_utc": "2026-10-24T15:42:27.725454+00:00",
+    "resultado": {
+      "tipo": "incidencia",
+      "cliente": null,
+      "lineas": [],
+      "urgente": false,
+      "resumen": "El molino está haciendo un ruido extraño y solicitan asistencia técnica."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [],
+    "avisos": []
+  },
+  {
+    "caso": 3,
+    "proveedor": "Claude",
+    "modelo": "anthropic/claude-haiku-4.5",
+    "correo": "¿Tenéis café descafeinado de especialidad?",
+    "esperado": "consulta",
+    "fecha_utc": "2026-10-24T15:42:29.260640+00:00",
+    "resultado": {
+      "tipo": "consulta",
+      "cliente": null,
+      "lineas": [],
+      "urgente": false,
+      "resumen": "Cliente consulta sobre disponibilidad de café descafeinado de especialidad."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [],
+    "avisos": []
+  },
+  {
+    "caso": 4,
+    "proveedor": "Claude",
+    "modelo": "anthropic/claude-haiku-4.5",
+    "correo": "Mandadme 5 kg de Etiopía y, de paso, la cafetera gotea. Lumbre.",
+    "esperado": "mixto",
+    "fecha_utc": "2026-10-24T15:42:30.803573+00:00",
+    "resultado": {
+      "tipo": "mixto",
+      "cliente": "Lumbre",
+      "lineas": [
+        {
+          "producto": "Etiopía",
+          "cantidad": 5
+        }
+      ],
+      "urgente": false,
+      "resumen": "Pedido de 5 kg de café Etiopía y reporte de problema con cafetera que gotea."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [
+      {
+        "id": 2,
+        "nombre": "Restaurante Lumbre",
+        "tipo": "restaurante",
+        "distrito": "Chamberí"
+      }
+    ],
+    "avisos": []
+  },
+  {
+    "caso": 5,
+    "proveedor": "Claude",
+    "modelo": "anthropic/claude-haiku-4.5",
+    "correo": "URGENTE: sin café para mañana, 10 kg de blend. Hotel Prado Suites",
+    "esperado": "pedido",
+    "fecha_utc": "2026-10-24T15:42:32.240800+00:00",
+    "resultado": {
+      "tipo": "pedido",
+      "cliente": "Hotel Prado Suites",
+      "lineas": [
+        {
+          "producto": "café blend",
+          "cantidad": 10
+        }
+      ],
+      "urgente": true,
+      "resumen": "Pedido urgente de 10 kg de café blend para entrega mañana."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [
+      {
+        "id": 3,
+        "nombre": "Hotel Prado Suites",
+        "tipo": "hotel",
+        "distrito": "Centro"
+      }
+    ],
+    "avisos": []
+  },
+  {
+    "caso": 6,
+    "proveedor": "Claude",
+    "modelo": "anthropic/claude-haiku-4.5",
+    "correo": "Buenas, ¿la factura de septiembre ya está emitida?",
+    "esperado": "consulta",
+    "fecha_utc": "2026-10-24T15:42:34.090483+00:00",
+    "resultado": {
+      "tipo": "consulta",
+      "cliente": null,
+      "lineas": [],
+      "urgente": false,
+      "resumen": "El cliente pregunta si la factura de septiembre ya ha sido emitida."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [],
+    "avisos": []
+  },
+  {
+    "caso": 7,
+    "proveedor": "Claude",
+    "modelo": "anthropic/claude-haiku-4.5",
+    "correo": "Qué maravilla: otra vez el molino averiado. Así da gusto abrir el bar. Necesitamos que lo reparéis. Bar La Esquina.",
+    "esperado": "incidencia",
+    "fecha_utc": "2026-10-24T15:42:35.513328+00:00",
+    "resultado": {
+      "tipo": "incidencia",
+      "cliente": "Bar La Esquina",
+      "lineas": [],
+      "urgente": true,
+      "resumen": "El molino de café está averiado y necesita reparación urgente."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [
+      {
+        "id": 1,
+        "nombre": "Bar La Esquina",
+        "tipo": "bar",
+        "distrito": "Retiro"
+      }
+    ],
+    "avisos": []
+  },
+  {
+    "caso": 8,
+    "proveedor": "Claude",
+    "modelo": "anthropic/claude-haiku-4.5",
+    "correo": "Soy del Bar La Esquina. Enviadnos 4 kg de descafeinado. El Restaurante Lumbre nos recomendó vuestro café, pero este pedido es solo para nosotros.",
+    "esperado": "pedido",
+    "fecha_utc": "2026-10-24T15:42:36.846569+00:00",
+    "resultado": {
+      "tipo": "pedido",
+      "cliente": "Bar La Esquina",
+      "lineas": [
+        {
+          "producto": "descafeinado",
+          "cantidad": 4
+        }
+      ],
+      "urgente": false,
+      "resumen": "Bar La Esquina solicita 4 kg de café descafeinado."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [
+      {
+        "id": 1,
+        "nombre": "Bar La Esquina",
+        "tipo": "bar",
+        "distrito": "Retiro"
+      }
+    ],
+    "avisos": []
+  },
+  {
+    "caso": 9,
+    "proveedor": "Claude",
+    "modelo": "anthropic/claude-haiku-4.5",
+    "correo": "Hello, please send 6 kg of your house blend to Hotel Prado Suites next Monday. Thank you.",
+    "esperado": "pedido",
+    "fecha_utc": "2026-10-24T15:42:38.135902+00:00",
+    "resultado": {
+      "tipo": "pedido",
+      "cliente": "Hotel Prado Suites",
+      "lineas": [
+        {
+          "producto": "house blend",
+          "cantidad": 6
+        }
+      ],
+      "urgente": false,
+      "resumen": "Pedido de 6 kg de house blend para Hotel Prado Suites con entrega el próximo lunes."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [
+      {
+        "id": 3,
+        "nombre": "Hotel Prado Suites",
+        "tipo": "hotel",
+        "distrito": "Centro"
+      }
+    ],
+    "avisos": []
+  },
+  {
+    "caso": 10,
+    "proveedor": "Claude",
+    "modelo": "anthropic/claude-haiku-4.5",
+    "correo": "Enviadme 3 kg de café de Etiopía. Gracias, Marta.",
+    "esperado": "pedido",
+    "fecha_utc": "2026-10-24T15:42:40.226348+00:00",
+    "resultado": {
+      "tipo": "pedido",
+      "cliente": "Marta",
+      "lineas": [
+        {
+          "producto": "café de Etiopía",
+          "cantidad": 3
+        }
+      ],
+      "urgente": false,
+      "resumen": "Pedido de 3 kg de café de Etiopía."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [],
+    "avisos": [
+      "Cliente no encontrado: Marta"
+    ]
+  },
+  {
+    "caso": 11,
+    "proveedor": "Claude",
+    "modelo": "anthropic/claude-haiku-4.5",
+    "correo": "Somos el Bar Inexistente. Queremos 2 kg de descafeinado.",
+    "esperado": "pedido",
+    "fecha_utc": "2026-10-24T15:42:41.417378+00:00",
+    "resultado": {
+      "tipo": "pedido",
+      "cliente": "Bar Inexistente",
+      "lineas": [
+        {
+          "producto": "descafeinado",
+          "cantidad": 2
+        }
+      ],
+      "urgente": false,
+      "resumen": "El Bar Inexistente solicita 2 kg de café descafeinado."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [],
+    "avisos": [
+      "Cliente no encontrado: Bar Inexistente"
+    ]
+  },
+  {
+    "caso": 12,
+    "proveedor": "Claude",
+    "modelo": "anthropic/claude-haiku-4.5",
+    "correo": "¿Cuál es el precio por kilo del blend y cuánto cuesta el envío? Panadería Ibiza.",
+    "esperado": "consulta",
+    "fecha_utc": "2026-10-24T15:42:43.386184+00:00",
+    "resultado": {
+      "tipo": "consulta",
+      "cliente": "Panadería Ibiza",
+      "lineas": [],
+      "urgente": false,
+      "resumen": "Cliente consulta sobre el precio por kilo del blend y el coste del envío."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [
+      {
+        "id": 5,
+        "nombre": "Panadería Ibiza",
+        "tipo": "cafeteria",
+        "distrito": "Retiro"
+      }
+    ],
+    "avisos": []
+  },
+  {
+    "caso": 13,
+    "proveedor": "Claude",
+    "modelo": "anthropic/claude-haiku-4.5",
+    "correo": "En Cafetería Atocha 12 la cafetera pierde agua. Además, enviadnos 8 kg de blend.",
+    "esperado": "mixto",
+    "fecha_utc": "2026-10-24T15:42:44.795356+00:00",
+    "resultado": {
+      "tipo": "mixto",
+      "cliente": "Cafetería Atocha 12",
+      "lineas": [
+        {
+          "producto": "blend",
+          "cantidad": 8
+        }
+      ],
+      "urgente": true,
+      "resumen": "Incidencia de cafetera con fuga de agua y pedido de 8 kg de blend."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [
+      {
+        "id": 4,
+        "nombre": "Cafetería Atocha 12",
+        "tipo": "cafeteria",
+        "distrito": "Arganzuela"
+      }
+    ],
+    "avisos": []
+  },
+  {
+    "caso": 14,
+    "proveedor": "Claude",
+    "modelo": "anthropic/claude-haiku-4.5",
+    "correo": "No enviéis café todavía. Solo quiero saber si tenéis existencias de Etiopía. Restaurante Lumbre.",
+    "esperado": "consulta",
+    "fecha_utc": "2026-10-24T15:42:46.566705+00:00",
+    "resultado": {
+      "tipo": "consulta",
+      "cliente": "Restaurante Lumbre",
+      "lineas": [],
+      "urgente": false,
+      "resumen": "Consulta sobre existencias de café de Etiopía sin realizar pedido."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [
+      {
+        "id": 2,
+        "nombre": "Restaurante Lumbre",
+        "tipo": "restaurante",
+        "distrito": "Chamberí"
+      }
+    ],
+    "avisos": []
+  },
+  {
+    "caso": 15,
+    "proveedor": "Claude",
+    "modelo": "anthropic/claude-haiku-4.5",
+    "correo": "El último pedido llegó con las bolsas rotas. Por favor, revisad la incidencia. Hotel Prado Suites.",
+    "esperado": "incidencia",
+    "fecha_utc": "2026-10-24T15:42:47.925520+00:00",
+    "resultado": {
+      "tipo": "incidencia",
+      "cliente": "Hotel Prado Suites",
+      "lineas": [],
+      "urgente": true,
+      "resumen": "Bolsas rotas en la entrega del último pedido."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [
+      {
+        "id": 3,
+        "nombre": "Hotel Prado Suites",
+        "tipo": "hotel",
+        "distrito": "Centro"
+      }
+    ],
+    "avisos": []
+  },
+  {
+    "caso": 16,
+    "proveedor": "Claude",
+    "modelo": "anthropic/claude-haiku-4.5",
+    "correo": "Para Bar La Esquina: 2 kg de Etiopía y 3 kg de descafeinado, por favor.",
+    "esperado": "pedido",
+    "fecha_utc": "2026-10-24T15:42:49.357195+00:00",
+    "resultado": {
+      "tipo": "pedido",
+      "cliente": "Bar La Esquina",
+      "lineas": [
+        {
+          "producto": "Etiopía",
+          "cantidad": 2
+        },
+        {
+          "producto": "descafeinado",
+          "cantidad": 3
+        }
+      ],
+      "urgente": false,
+      "resumen": "Bar La Esquina solicita 2 kg de Etiopía y 3 kg de descafeinado."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [
+      {
+        "id": 1,
+        "nombre": "Bar La Esquina",
+        "tipo": "bar",
+        "distrito": "Retiro"
+      }
+    ],
+    "avisos": []
+  },
+  {
+    "caso": 17,
+    "proveedor": "Claude",
+    "modelo": "anthropic/claude-haiku-4.5",
+    "correo": "Soy de Cafetería Luna Azul. ¿Vendéis vasos compostables?",
+    "esperado": "consulta",
+    "fecha_utc": "2026-10-24T15:42:50.693487+00:00",
+    "resultado": {
+      "tipo": "consulta",
+      "cliente": "Cafetería Luna Azul",
+      "lineas": [],
+      "urgente": false,
+      "resumen": "Consulta sobre disponibilidad de vasos compostables."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [],
+    "avisos": [
+      "Cliente no encontrado: Cafetería Luna Azul"
+    ]
+  },
+  {
+    "caso": 18,
+    "proveedor": "Claude",
+    "modelo": "anthropic/claude-haiku-4.5",
+    "correo": "Panadería Ibiza: enviad 0 kg de blend. Es la cantidad que figura en nuestra solicitud.",
+    "esperado": "pedido",
+    "fecha_utc": "2026-10-24T15:42:51.958520+00:00",
+    "resultado": {
+      "tipo": "pedido",
+      "cliente": "Panadería Ibiza",
+      "lineas": [
+        {
+          "producto": "blend",
+          "cantidad": 0
+        }
+      ],
+      "urgente": false,
+      "resumen": "Panadería Ibiza solicita 0 kg de blend según su solicitud."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [
+      {
+        "id": 5,
+        "nombre": "Panadería Ibiza",
+        "tipo": "cafeteria",
+        "distrito": "Retiro"
+      }
+    ],
+    "avisos": [
+      "Cantidad no válida: debe ser mayor que cero"
+    ]
+  }
+]

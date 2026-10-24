@@ -1,0 +1,504 @@
+[
+  {
+    "caso": 1,
+    "proveedor": "Gemini",
+    "modelo": "google/gemini-3.8-flash",
+    "correo": "Necesito 20 kg del blend de hostelería para el viernes. Bar La Esquina.",
+    "esperado": "pedido",
+    "fecha_utc": "2026-10-24T15:42:53.540003+00:00",
+    "resultado": {
+      "tipo": "pedido",
+      "cliente": "Bar La Esquina",
+      "lineas": [
+        {
+          "producto": "blend de hostelería",
+          "cantidad": 20
+        }
+      ],
+      "urgente": false,
+      "resumen": "Pedido de 20 kg de blend de hostelería para el viernes realizado por Bar La Esquina."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [
+      {
+        "id": 1,
+        "nombre": "Bar La Esquina",
+        "tipo": "bar",
+        "distrito": "Retiro"
+      }
+    ],
+    "avisos": []
+  },
+  {
+    "caso": 2,
+    "proveedor": "Gemini",
+    "modelo": "google/gemini-3.8-flash",
+    "correo": "El molino hace un ruido raro desde ayer, ¿podéis venir?",
+    "esperado": "incidencia",
+    "fecha_utc": "2026-10-24T15:42:59.089444+00:00",
+    "resultado": {
+      "tipo": "incidencia",
+      "cliente": null,
+      "lineas": [],
+      "urgente": false,
+      "resumen": "El cliente solicita asistencia técnica porque el molino hace un ruido extraño desde ayer."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [],
+    "avisos": []
+  },
+  {
+    "caso": 3,
+    "proveedor": "Gemini",
+    "modelo": "google/gemini-3.8-flash",
+    "correo": "¿Tenéis café descafeinado de especialidad?",
+    "esperado": "consulta",
+    "fecha_utc": "2026-10-24T15:43:03.267106+00:00",
+    "resultado": {
+      "tipo": "consulta",
+      "cliente": null,
+      "lineas": [],
+      "urgente": false,
+      "resumen": "El cliente pregunta si disponen de café descafeinado de especialidad."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [],
+    "avisos": []
+  },
+  {
+    "caso": 4,
+    "proveedor": "Gemini",
+    "modelo": "google/gemini-3.8-flash",
+    "correo": "Mandadme 5 kg de Etiopía y, de paso, la cafetera gotea. Lumbre.",
+    "esperado": "mixto",
+    "fecha_utc": "2026-10-24T15:43:06.063558+00:00",
+    "resultado": {
+      "tipo": "mixto",
+      "cliente": "Lumbre",
+      "lineas": [
+        {
+          "producto": "Etiopía",
+          "cantidad": 5
+        }
+      ],
+      "urgente": false,
+      "resumen": "El cliente solicita 5 kg de café Etiopía y notifica que la cafetera gotea."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [
+      {
+        "id": 2,
+        "nombre": "Restaurante Lumbre",
+        "tipo": "restaurante",
+        "distrito": "Chamberí"
+      }
+    ],
+    "avisos": []
+  },
+  {
+    "caso": 5,
+    "proveedor": "Gemini",
+    "modelo": "google/gemini-3.8-flash",
+    "correo": "URGENTE: sin café para mañana, 10 kg de blend. Hotel Prado Suites",
+    "esperado": "pedido",
+    "fecha_utc": "2026-10-24T15:43:10.417641+00:00",
+    "resultado": {
+      "tipo": "pedido",
+      "cliente": "Hotel Prado Suites",
+      "lineas": [
+        {
+          "producto": "blend",
+          "cantidad": 10
+        }
+      ],
+      "urgente": true,
+      "resumen": "Pedido urgente de 10 kg de café blend para Hotel Prado Suites."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [
+      {
+        "id": 3,
+        "nombre": "Hotel Prado Suites",
+        "tipo": "hotel",
+        "distrito": "Centro"
+      }
+    ],
+    "avisos": []
+  },
+  {
+    "caso": 6,
+    "proveedor": "Gemini",
+    "modelo": "google/gemini-3.8-flash",
+    "correo": "Buenas, ¿la factura de septiembre ya está emitida?",
+    "esperado": "consulta",
+    "fecha_utc": "2026-10-24T15:43:13.811908+00:00",
+    "resultado": {
+      "tipo": "consulta",
+      "cliente": null,
+      "lineas": [],
+      "urgente": false,
+      "resumen": "El cliente consulta si la factura de septiembre ya está emitida."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [],
+    "avisos": []
+  },
+  {
+    "caso": 7,
+    "proveedor": "Gemini",
+    "modelo": "google/gemini-3.8-flash",
+    "correo": "Qué maravilla: otra vez el molino averiado. Así da gusto abrir el bar. Necesitamos que lo reparéis. Bar La Esquina.",
+    "esperado": "incidencia",
+    "fecha_utc": "2026-10-24T15:43:17.902816+00:00",
+    "resultado": {
+      "tipo": "incidencia",
+      "cliente": "Bar La Esquina",
+      "lineas": [],
+      "urgente": true,
+      "resumen": "El cliente informa de una avería en el molino y solicita asistencia técnica para repararlo."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [
+      {
+        "id": 1,
+        "nombre": "Bar La Esquina",
+        "tipo": "bar",
+        "distrito": "Retiro"
+      }
+    ],
+    "avisos": []
+  },
+  {
+    "caso": 8,
+    "proveedor": "Gemini",
+    "modelo": "google/gemini-3.8-flash",
+    "correo": "Soy del Bar La Esquina. Enviadnos 4 kg de descafeinado. El Restaurante Lumbre nos recomendó vuestro café, pero este pedido es solo para nosotros.",
+    "esperado": "pedido",
+    "fecha_utc": "2026-10-24T15:43:24.048998+00:00",
+    "resultado": {
+      "tipo": "pedido",
+      "cliente": "Bar La Esquina",
+      "lineas": [
+        {
+          "producto": "descafeinado",
+          "cantidad": 4
+        }
+      ],
+      "urgente": false,
+      "resumen": "El Bar La Esquina solicita un pedido de 4 kg de café descafeinado."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [
+      {
+        "id": 1,
+        "nombre": "Bar La Esquina",
+        "tipo": "bar",
+        "distrito": "Retiro"
+      }
+    ],
+    "avisos": []
+  },
+  {
+    "caso": 9,
+    "proveedor": "Gemini",
+    "modelo": "google/gemini-3.8-flash",
+    "correo": "Hello, please send 6 kg of your house blend to Hotel Prado Suites next Monday. Thank you.",
+    "esperado": "pedido",
+    "fecha_utc": "2026-10-24T15:43:27.962546+00:00",
+    "resultado": {
+      "tipo": "pedido",
+      "cliente": "Hotel Prado Suites",
+      "lineas": [
+        {
+          "producto": "house blend",
+          "cantidad": 6
+        }
+      ],
+      "urgente": false,
+      "resumen": "Hotel Prado Suites solicita un pedido de 6 kg de café house blend para el próximo lunes."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [
+      {
+        "id": 3,
+        "nombre": "Hotel Prado Suites",
+        "tipo": "hotel",
+        "distrito": "Centro"
+      }
+    ],
+    "avisos": []
+  },
+  {
+    "caso": 10,
+    "proveedor": "Gemini",
+    "modelo": "google/gemini-3.8-flash",
+    "correo": "Enviadme 3 kg de café de Etiopía. Gracias, Marta.",
+    "esperado": "pedido",
+    "fecha_utc": "2026-10-24T15:43:32.957686+00:00",
+    "resultado": {
+      "tipo": "pedido",
+      "cliente": null,
+      "lineas": [
+        {
+          "producto": "café de Etiopía",
+          "cantidad": 3
+        }
+      ],
+      "urgente": false,
+      "resumen": "Marta solicita un pedido de 3 kg de café de Etiopía."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [],
+    "avisos": []
+  },
+  {
+    "caso": 11,
+    "proveedor": "Gemini",
+    "modelo": "google/gemini-3.8-flash",
+    "correo": "Somos el Bar Inexistente. Queremos 2 kg de descafeinado.",
+    "esperado": "pedido",
+    "fecha_utc": "2026-10-24T15:43:36.568342+00:00",
+    "resultado": {
+      "tipo": "pedido",
+      "cliente": "Bar Inexistente",
+      "lineas": [
+        {
+          "producto": "descafeinado",
+          "cantidad": 2
+        }
+      ],
+      "urgente": false,
+      "resumen": "El Bar Inexistente solicita un pedido de 2 kg de café descafeinado."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [],
+    "avisos": [
+      "Cliente no encontrado: Bar Inexistente"
+    ]
+  },
+  {
+    "caso": 12,
+    "proveedor": "Gemini",
+    "modelo": "google/gemini-3.8-flash",
+    "correo": "¿Cuál es el precio por kilo del blend y cuánto cuesta el envío? Panadería Ibiza.",
+    "esperado": "consulta",
+    "fecha_utc": "2026-10-24T15:43:41.152693+00:00",
+    "resultado": {
+      "tipo": "consulta",
+      "cliente": "Panadería Ibiza",
+      "lineas": [],
+      "urgente": false,
+      "resumen": "Panadería Ibiza consulta el precio por kilo del blend y el coste del envío."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [
+      {
+        "id": 5,
+        "nombre": "Panadería Ibiza",
+        "tipo": "cafeteria",
+        "distrito": "Retiro"
+      }
+    ],
+    "avisos": []
+  },
+  {
+    "caso": 13,
+    "proveedor": "Gemini",
+    "modelo": "google/gemini-3.8-flash",
+    "correo": "En Cafetería Atocha 12 la cafetera pierde agua. Además, enviadnos 8 kg de blend.",
+    "esperado": "mixto",
+    "fecha_utc": "2026-10-24T15:43:44.463043+00:00",
+    "resultado": {
+      "tipo": "mixto",
+      "cliente": "Cafetería Atocha 12",
+      "lineas": [
+        {
+          "producto": "blend",
+          "cantidad": 8
+        }
+      ],
+      "urgente": false,
+      "resumen": "Cafetería Atocha 12 reporta una pérdida de agua en la cafetera y solicita un pedido de 8 kg de blend."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [
+      {
+        "id": 4,
+        "nombre": "Cafetería Atocha 12",
+        "tipo": "cafeteria",
+        "distrito": "Arganzuela"
+      }
+    ],
+    "avisos": []
+  },
+  {
+    "caso": 14,
+    "proveedor": "Gemini",
+    "modelo": "google/gemini-3.8-flash",
+    "correo": "No enviéis café todavía. Solo quiero saber si tenéis existencias de Etiopía. Restaurante Lumbre.",
+    "esperado": "consulta",
+    "fecha_utc": "2026-10-24T15:43:49.953156+00:00",
+    "resultado": {
+      "tipo": "consulta",
+      "cliente": "Restaurante Lumbre",
+      "lineas": [],
+      "urgente": false,
+      "resumen": "El cliente consulta si disponen de existencias de café Etiopía."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [
+      {
+        "id": 2,
+        "nombre": "Restaurante Lumbre",
+        "tipo": "restaurante",
+        "distrito": "Chamberí"
+      }
+    ],
+    "avisos": []
+  },
+  {
+    "caso": 15,
+    "proveedor": "Gemini",
+    "modelo": "google/gemini-3.8-flash",
+    "correo": "El último pedido llegó con las bolsas rotas. Por favor, revisad la incidencia. Hotel Prado Suites.",
+    "esperado": "incidencia",
+    "fecha_utc": "2026-10-24T15:46:50.499582+00:00",
+    "resultado": {
+      "tipo": "incidencia",
+      "cliente": "Hotel Prado Suites",
+      "lineas": [],
+      "urgente": false,
+      "resumen": "Hotel Prado Suites notifica que su último pedido llegó con las bolsas rotas."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [
+      {
+        "id": 3,
+        "nombre": "Hotel Prado Suites",
+        "tipo": "hotel",
+        "distrito": "Centro"
+      }
+    ],
+    "avisos": [],
+    "intento_previo": {
+      "fecha_utc": "2026-10-24T15:43:53.541262+00:00",
+      "error": "HTTP 402: in_flight_budget_exhausted; reintentado después de finalizar las otras solicitudes."
+    }
+  },
+  {
+    "caso": 16,
+    "proveedor": "Gemini",
+    "modelo": "google/gemini-3.8-flash",
+    "correo": "Para Bar La Esquina: 2 kg de Etiopía y 3 kg de descafeinado, por favor.",
+    "esperado": "pedido",
+    "fecha_utc": "2026-10-24T15:46:54.110790+00:00",
+    "resultado": {
+      "tipo": "pedido",
+      "cliente": "Bar La Esquina",
+      "lineas": [
+        {
+          "producto": "Etiopía",
+          "cantidad": 2
+        },
+        {
+          "producto": "descafeinado",
+          "cantidad": 3
+        }
+      ],
+      "urgente": false,
+      "resumen": "Pedido de 2 kg de café Etiopía y 3 kg de descafeinado para Bar La Esquina."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [
+      {
+        "id": 1,
+        "nombre": "Bar La Esquina",
+        "tipo": "bar",
+        "distrito": "Retiro"
+      }
+    ],
+    "avisos": [],
+    "intento_previo": {
+      "fecha_utc": "2026-10-24T15:43:53.840940+00:00",
+      "error": "HTTP 402: in_flight_budget_exhausted; reintentado después de finalizar las otras solicitudes."
+    }
+  },
+  {
+    "caso": 17,
+    "proveedor": "Gemini",
+    "modelo": "google/gemini-3.8-flash",
+    "correo": "Soy de Cafetería Luna Azul. ¿Vendéis vasos compostables?",
+    "esperado": "consulta",
+    "fecha_utc": "2026-10-24T15:46:58.541044+00:00",
+    "resultado": {
+      "tipo": "consulta",
+      "cliente": "Cafetería Luna Azul",
+      "lineas": [],
+      "urgente": false,
+      "resumen": "Cafetería Luna Azul consulta sobre la disponibilidad de vasos compostables."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [],
+    "avisos": [
+      "Cliente no encontrado: Cafetería Luna Azul"
+    ],
+    "intento_previo": {
+      "fecha_utc": "2026-10-24T15:43:54.256930+00:00",
+      "error": "HTTP 402: in_flight_budget_exhausted; reintentado después de finalizar las otras solicitudes."
+    }
+  },
+  {
+    "caso": 18,
+    "proveedor": "Gemini",
+    "modelo": "google/gemini-3.8-flash",
+    "correo": "Panadería Ibiza: enviad 0 kg de blend. Es la cantidad que figura en nuestra solicitud.",
+    "esperado": "pedido",
+    "fecha_utc": "2026-10-24T15:47:03.274175+00:00",
+    "resultado": {
+      "tipo": "pedido",
+      "cliente": "Panadería Ibiza",
+      "lineas": [
+        {
+          "producto": "blend",
+          "cantidad": 0
+        }
+      ],
+      "urgente": false,
+      "resumen": "Panadería Ibiza solicita el envío de 0 kg de blend conforme a su solicitud."
+    },
+    "acierto": true,
+    "error": null,
+    "clientes_en_bd": [
+      {
+        "id": 5,
+        "nombre": "Panadería Ibiza",
+        "tipo": "cafeteria",
+        "distrito": "Retiro"
+      }
+    ],
+    "avisos": [
+      "Cantidad no válida: debe ser mayor que cero"
+    ],
+    "intento_previo": {
+      "fecha_utc": "2026-10-24T15:43:54.673314+00:00",
+      "error": "HTTP 402: in_flight_budget_exhausted; reintentado después de finalizar las otras solicitudes."
+    }
+  }
+]

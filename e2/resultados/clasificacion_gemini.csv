@@ -1,0 +1,19 @@
+﻿caso,proveedor,modelo,esperado,obtenido,acierto,error,avisos
+1,Gemini,google/gemini-3.8-flash,pedido,pedido,True,,
+2,Gemini,google/gemini-3.8-flash,incidencia,incidencia,True,,
+3,Gemini,google/gemini-3.8-flash,consulta,consulta,True,,
+4,Gemini,google/gemini-3.8-flash,mixto,mixto,True,,
+5,Gemini,google/gemini-3.8-flash,pedido,pedido,True,,
+6,Gemini,google/gemini-3.8-flash,consulta,consulta,True,,
+7,Gemini,google/gemini-3.8-flash,incidencia,incidencia,True,,
+8,Gemini,google/gemini-3.8-flash,pedido,pedido,True,,
+9,Gemini,google/gemini-3.8-flash,pedido,pedido,True,,
+10,Gemini,google/gemini-3.8-flash,pedido,pedido,True,,
+11,Gemini,google/gemini-3.8-flash,pedido,pedido,True,,Cliente no encontrado: Bar Inexistente
+12,Gemini,google/gemini-3.8-flash,consulta,consulta,True,,
+13,Gemini,google/gemini-3.8-flash,mixto,mixto,True,,
+14,Gemini,google/gemini-3.8-flash,consulta,consulta,True,,
+15,Gemini,google/gemini-3.8-flash,incidencia,incidencia,True,,
+16,Gemini,google/gemini-3.8-flash,pedido,pedido,True,,
+17,Gemini,google/gemini-3.8-flash,consulta,consulta,True,,Cliente no encontrado: Cafetería Luna Azul
+18,Gemini,google/gemini-3.8-flash,pedido,pedido,True,,Cantidad no válida: debe ser mayor que cero

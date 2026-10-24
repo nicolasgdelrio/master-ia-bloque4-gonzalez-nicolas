@@ -1,0 +1,64 @@
+{
+  "proveedor": "OpenAI",
+  "modelo": "openai/gpt-5.4-mini",
+  "pregunta": "¿Qué pedidos tiene el Bar Inexistente?",
+  "fecha_utc": "2026-10-24T15:42:20.877316+00:00",
+  "vueltas": [
+    {
+      "numero": 1,
+      "usage": {
+        "input_tokens": 265,
+        "input_tokens_details": {
+          "cache_write_tokens": null,
+          "cached_tokens": 0
+        },
+        "output_tokens": 21,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 286,
+        "cost": 0.00029325,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00029325,
+          "upstream_inference_input_cost": 0.00019875,
+          "upstream_inference_output_cost": 9.45e-05
+        }
+      },
+      "llamadas": [
+        {
+          "nombre": "buscar_cliente",
+          "argumentos": {
+            "texto": "Bar Inexistente"
+          },
+          "resultado": []
+        }
+      ]
+    },
+    {
+      "numero": 2,
+      "usage": {
+        "input_tokens": 298,
+        "input_tokens_details": {
+          "cache_write_tokens": null,
+          "cached_tokens": 0
+        },
+        "output_tokens": 33,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 331,
+        "cost": 0.000372,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.000372,
+          "upstream_inference_input_cost": 0.0002235,
+          "upstream_inference_output_cost": 0.0001485
+        }
+      },
+      "llamadas": []
+    }
+  ],
+  "respuesta": "No he encontrado ningún cliente con el nombre “Bar Inexistente”.\n\nSi quieres, puedo buscar por una parte del nombre o comprobar una variante.",
+  "completada": true
+}

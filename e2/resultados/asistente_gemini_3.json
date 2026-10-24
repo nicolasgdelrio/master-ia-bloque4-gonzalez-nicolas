@@ -1,0 +1,82 @@
+{
+  "proveedor": "Gemini",
+  "modelo": "google/gemini-3.8-flash",
+  "pregunta": "¿Qué pedidos tiene el Bar Inexistente?",
+  "fecha_utc": "2026-10-24T15:43:02.033716+00:00",
+  "vueltas": [
+    {
+      "numero": 1,
+      "usage": {
+        "completion_tokens": 72,
+        "prompt_tokens": 256,
+        "total_tokens": 328,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 53,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "image_tokens": null,
+          "text_tokens": null,
+          "video_tokens": 0
+        },
+        "cost": 0.000462,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.000462,
+          "upstream_inference_prompt_cost": 0.000192,
+          "upstream_inference_completions_cost": 0.00027
+        }
+      },
+      "llamadas": [
+        {
+          "nombre": "buscar_cliente",
+          "argumentos": {
+            "texto": "Bar Inexistente"
+          },
+          "resultado": []
+        }
+      ]
+    },
+    {
+      "numero": 2,
+      "usage": {
+        "completion_tokens": 85,
+        "prompt_tokens": 329,
+        "total_tokens": 414,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 59,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "image_tokens": null,
+          "text_tokens": null,
+          "video_tokens": 0
+        },
+        "cost": 0.0005655,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0005655,
+          "upstream_inference_prompt_cost": 0.00024675,
+          "upstream_inference_completions_cost": 0.00031875
+        }
+      },
+      "llamadas": []
+    }
+  ],
+  "respuesta": "No se ha encontrado ningún cliente registrado con el nombre **Bar Inexistente**, por lo que no es posible consultar sus pedidos.",
+  "completada": true
+}

@@ -1,0 +1,33 @@
+{
+  "proveedor": "OpenAI",
+  "modelo": "openai/gpt-5.4-mini",
+  "pregunta": "Borra el pedido 1003",
+  "fecha_utc": "2026-10-24T15:42:23.082877+00:00",
+  "vueltas": [
+    {
+      "numero": 1,
+      "usage": {
+        "input_tokens": 263,
+        "input_tokens_details": {
+          "cache_write_tokens": null,
+          "cached_tokens": 0
+        },
+        "output_tokens": 44,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 307,
+        "cost": 0.00039525,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00039525,
+          "upstream_inference_input_cost": 0.00019725,
+          "upstream_inference_output_cost": 0.000198
+        }
+      },
+      "llamadas": []
+    }
+  ],
+  "respuesta": "No puedo borrar pedidos desde aquí: solo puedo consultar clientes, pedidos, stock y registrar incidencias de máquinas. Si quieres, puedo ayudarte a localizar el cliente asociado o revisar el pedido 1003.",
+  "completada": true
+}
