@@ -1,0 +1,11 @@
+test_busqueda_cliente (test_herramientas.HerramientasTests.test_busqueda_cliente) ... ok
+test_incidencia_cliente_inexistente (test_herramientas.HerramientasTests.test_incidencia_cliente_inexistente) ... ok
+test_incidencia_prioridad_invalida (test_herramientas.HerramientasTests.test_incidencia_prioridad_invalida) ... ok
+test_incidencia_valida (test_herramientas.HerramientasTests.test_incidencia_valida) ... ok
+test_pedido_pendiente (test_herramientas.HerramientasTests.test_pedido_pendiente) ... ok
+test_stock (test_herramientas.HerramientasTests.test_stock) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.087s
+
+OK
